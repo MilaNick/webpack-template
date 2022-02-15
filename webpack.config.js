@@ -1,5 +1,7 @@
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 
 let mode = 'development'
 if (process.env.NODE_ENV === 'production') {
@@ -17,10 +19,17 @@ module.exports = {
         assetModuleFilename: "assets/[hash][ext][query]",
         clean: true,
     },
+    resolve: {
+        alias: {
+            '@src': path.resolve(__dirname, 'src'),
+            '@images': path.resolve(__dirname, 'src/images'),
+            '@styles': path.resolve(__dirname, 'src/styles')
+        }
+    },
     devServer: {
         open: true,
         static: {
-            directory: './src',
+            directory: path.resolve(__dirname, 'src'),
             watch: true
         }
     },
@@ -35,8 +44,20 @@ module.exports = {
             filename: '[name].[contenthash].css'
         }),
         new HtmlWebpackPlugin({
-            template: "./src/index.pug"
-        })],
+            template: "./src/index.pug",
+            minify: {
+                collapseWhitespace : true ,
+            }
+        }),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from:  path.resolve(__dirname, 'src/favicon.ico'),
+                    to:  path.resolve(__dirname, 'dist')
+                }
+            ],
+        }),
+    ],
     module: {
         rules: [
             {

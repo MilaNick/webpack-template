@@ -1,3 +1,3 @@
 import $ from "jquery";
 
-$('.footer').html('working');
+$('.footer').html('Hello, world!');
