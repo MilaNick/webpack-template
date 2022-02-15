@@ -1,23 +1,22 @@
 # ✨ Webpack template v.2 ✨
-Basic configuration of Webpack.
+Basic configuration of Webpack 5
 The project uses Css/Less/Sass(Scss), JSON, Pug,Bootstrap, Jquery, React
 
 ## 🚀 Quick start
-- Clone the repository  
-- Install dependencies:
+- Clone this repo and npm install
 ```
 npm i
 ```
 Commands in terminal:  
-- Start server
+- Development server
 ```
 npm start
 ```
-- Build mode production
+- Production build
 ```
 npm run build
 ```
-- Start development mode
+- Development mode
 ```
 npm run dev
 ```

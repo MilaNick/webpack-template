@@ -5,7 +5,6 @@ let mode = 'development'
 if (process.env.NODE_ENV === 'production') {
     mode = 'production'
 }
-console.log(mode + ' mode')
 
 module.exports = {
     mode: mode,
@@ -68,7 +67,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                test: /\.(png|svg|jpg|jpeg|ico|gif)$/i,
                 type: 'asset/resource',
             },
             {
