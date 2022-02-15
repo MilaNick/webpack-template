@@ -1,3 +1,3 @@
 import $ from "jquery";
 
-$('.footer').html('Hello, world!');
+$('.footer').html('Шаблон webpack собран');

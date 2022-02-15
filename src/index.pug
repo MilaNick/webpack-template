@@ -8,9 +8,16 @@ html(lang='en')
             h1 Webpack template
             h2.container__subtitle Customization webpack
             +image('webpack')
-            .block
-            p
-                | - проверяем установленную версию Node.js и пакетного менеджера npm
-                |     node -v
-                |     npm -v
+            h2.block
+            hr
+            p - проверяем установленную версию Node.js и пакетного менеджера
+            p npm node -v
+            p npm -v
+            p - инициализируем пакеты npm Обычно, инициализация пакетов - это процесс быстрой установки пакетов NPM - а, которые прописаны в файле package.json.Команда создаст файл package.json
+            p npm init
+            p - затем отвечаем на вопросы: название пакета(по умолчанию - название проекта), версия, описание, entry point - точка входа, не забываем, что все можно затем изменить.Далее, можно пропустить test command, git repository, ключевые слова, автора.После чего у нас появляется package.json.
+            p - устанавливаем   webpack(корневой функционал)  и webpack - cli(команды в терминале, Command Line Interface), -D(установка зависимости для разработки - devDependencies)
+            p npm install -D webpack webpack-cli
+            p - создаем файл webpack.config.js
+            HR
             .footer

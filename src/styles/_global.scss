@@ -5,16 +5,21 @@ html {
   font-family: generalFont;
 }
 
-h1  {
-  color: $primaryColor;
+.container {
+  width: 1000px;
+  margin: 0 auto;
   font-size: 30px;
-}
-.container{
+  h1  {
+    color: $primaryColor;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+
   &__subtitle {
     color: $secondaryColor;
-    height: 140px;
-    //background: url("../images/webpack.png");
-    display: flex;
-    justify-content: center;
+    font-size: 40px;
+    text-align: center;
   }
 }
