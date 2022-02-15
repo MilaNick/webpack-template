@@ -3,8 +3,8 @@ Basic configuration of Webpack.
 The project uses Css/Less/Sass(Scss), JSON, Pug,Bootstrap, Jquery, React
 
 ## 🚀 Quick start
-Clone the repository
-Install dependencies:
+- Clone the repository  
+- Install dependencies:
 ```
 npm i
 ```

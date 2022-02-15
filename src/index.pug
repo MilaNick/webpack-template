@@ -5,9 +5,12 @@ html(lang='en')
     include pug/_head
     body
         .container
-            h1 Hello from Webpack
-            h2.container__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ipsam!
-            +image('angular')
+            h1 Webpack template
+            h2.container__subtitle Customization webpack
             +image('webpack')
             .block
-            .user
+            p
+                | - проверяем установленную версию Node.js и пакетного менеджера npm
+                |     node -v
+                |     npm -v
+            .footer

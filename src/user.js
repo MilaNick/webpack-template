@@ -1,3 +1,3 @@
 import $ from "jquery";
 
-$('.user').html('User is working');
+$('.footer').html('working');
