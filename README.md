@@ -1,6 +1,6 @@
 # ✨ Webpack template v.2 ✨
 Basic configuration of Webpack 5
-The project uses Css/Less/Sass(Scss), JSON, Pug,Bootstrap, Jquery, React
+The project uses Sass(Scss), Pug, Bootstrap, Jquery, React
 
 ## 🚀 Quick start
 - Clone this repo and npm install
